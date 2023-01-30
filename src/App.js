@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 import Edit from "./Pages/Edit";
-import FourOFour from "./Pages/FourOFour";
+import Four0Four from "./Pages/Four0Four";
 import Home from "./Pages/Home";
 import Index from "./Pages/Index";
 import New from "./Pages/New";
@@ -23,7 +23,7 @@ function App() {
             <Route path="/snacks/new" element={<New />} />
             <Route exact path="/snacks/:id" element={<Show />} />
             <Route path="/snacks/:id/edit" element={<Edit />} />
-            <Route path="*" element={<FourOFour />} />
+            <Route path="*" element={<Four0Four />} />
           </Routes>
         </main>
       </Router>
