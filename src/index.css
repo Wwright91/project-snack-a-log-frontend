@@ -19,3 +19,9 @@ a {
 .new-button {
     border-radius: 30px;
 }
+
+.show-buttons {
+  flex-direction: row-reverse;
+  padding-right: 570px;
+  column-gap: 20px;
+}
