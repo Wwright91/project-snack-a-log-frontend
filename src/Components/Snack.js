@@ -1,10 +1,10 @@
 import React from "react";
-import {Link} from "react-router-dom";
-const Snack = ({ snack, index }) => {
+import { Link } from "react-router-dom";
+const Snack = ({ snack }) => {
   return (
     <tr>
       <td>
-        <Link to={`/snacks/${index}`}>
+        <Link to={`/snacks/${snack.id}`}>
           <img
             src={snack.image}
             alt={`${snack.name} img`}
@@ -14,9 +14,7 @@ const Snack = ({ snack, index }) => {
           {snack.name}
         </Link>
       </td>
-      <td>  {snack.is_healthy ? (
-          <span>❤️</span>
-        ) : <span> ♡ </span>}</td>
+      <td> {snack.is_healthy ? <span>❤️</span> : <span> ♡ </span>}</td>
     </tr>
   );
 };

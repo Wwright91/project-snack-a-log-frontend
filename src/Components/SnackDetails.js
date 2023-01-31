@@ -36,7 +36,15 @@ const SnackDetails = () => {
   return (
     <div className="card-body text-center">
       <article>
-        <h3>{name} {" "}<img src={is_healthy ? heart_solid : heart_outline} height="20px" width="20px"alt="healthy-unhealthy"/></h3>
+        <h3>
+          {name}{" "}
+          <img
+            src={is_healthy ? heart_solid : heart_outline}
+            height="20px"
+            width="20px"
+            alt="healthy-unhealthy"
+          />
+        </h3>
         <br />
         <img src={image} alt={name} height="200px" width="200px" />
         <br />
@@ -52,7 +60,7 @@ const SnackDetails = () => {
             </button>
           </div>
           <div>
-            <Link to={`/songs/${id}/edit`}>
+            <Link to={`/snacks/${id}/edit`}>
               <button className="btn btn-warning">Edit</button>
             </Link>
           </div>
@@ -70,6 +78,5 @@ const SnackDetails = () => {
     </div>
   );
 };
-
 
 export default SnackDetails;
