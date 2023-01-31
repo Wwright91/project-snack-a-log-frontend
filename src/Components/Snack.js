@@ -14,6 +14,9 @@ const Snack = ({ snack, index }) => {
           {snack.name}
         </Link>
       </td>
+      <td>  {snack.is_healthy ? (
+          <span>❤️</span>
+        ) : <span> ♡ </span>}</td>
     </tr>
   );
 };
