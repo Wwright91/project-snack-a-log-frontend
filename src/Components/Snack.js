@@ -1,11 +1,21 @@
-import React from 'react'
-
-const Snack = () => {
+import React from "react";
+import {Link} from "react-router-dom";
+const Snack = ({ snack, index }) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <tr>
+      <td>
+        <Link to={`/snacks/${index}`}>
+          <img
+            src={snack.image}
+            alt={`${snack.name} img`}
+            width="42"
+            height="42"
+          />
+          {snack.name}
+        </Link>
+      </td>
+    </tr>
+  );
+};
 
-export default Snack
+export default Snack;
