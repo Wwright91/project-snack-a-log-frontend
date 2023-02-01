@@ -1,6 +1,8 @@
-import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
+const API = process.env.REACT_APP_API_URL;
 
 const SnackNewForm = () => {
   const navigate = useNavigate();
@@ -13,20 +15,19 @@ const SnackNewForm = () => {
 
   const [image, setImage] = useState("");
 
-  const [sugar, setSugar] = useState("");
+  const [added_sugar, setSugar] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
     axios
-      .post("http://localhost:3333/snacks", {
+      .post(`${API}/snacks`, {
         fiber,
         name,
         protein,
         added_sugar,
-        is_healthy,
         image,
       })
-      .then(function (response) {
+      .then(() => {
         navigate("/snacks");
       })
       .catch(function (error) {
@@ -39,6 +40,15 @@ const SnackNewForm = () => {
       <h3>Add a New Snack</h3>
 
       <form onSubmit={handleSubmit}>
+        <label for="name">Name</label>
+        <input
+          onChange={(e) => setName(e.target.value)}
+          id="name"
+          name="name"
+          type="text"
+          value={name}
+        />
+
         <label for="protein">Protein</label>
         <input
           onChange={(e) => setProtein(e.target.value)}
@@ -46,15 +56,6 @@ const SnackNewForm = () => {
           name="protein"
           type="number"
           value={protein}
-        />
-
-        <label for="item_name">Name</label>
-        <input
-          onChange={(e) => setName(e.target.value)}
-          id="item_name"
-          name="item_name"
-          type="text"
-          value={item_name}
         />
 
         <label for="Fiber">Fiber</label>
@@ -78,11 +79,12 @@ const SnackNewForm = () => {
         <label for="sugar">Sugar</label>
         <input
           onChange={(e) => setSugar(e.target.value)}
-          id="sugar"
-          name="sugar"
+          id="added_sugar"
+          name="added_sugar"
           type="number"
-          value={sugar}
+          value={added_sugar}
         />
+
         <input type="submit" value="submit" />
       </form>
     </div>
