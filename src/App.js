@@ -10,6 +10,7 @@ import Show from "./Pages/Show";
 
 
 import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="*" element={<Four0Four />} />
           </Routes>
         </main>
+        <Footer/>
       </Router>
     </div>
   );
