@@ -49,11 +49,13 @@ const SnackDetails = () => {
         <img src={image} alt={name} height="200px" width="200px" />
         <br />
         <br />
-        <h4>Fiber: {fiber}</h4>
-        <h4>Protein: {protein}</h4>
-        <h4>Added Sugar: {added_sugar}</h4>
+        <container className="container">
+          <h4>Fiber: {fiber}</h4>
+          <h4>Protein: {protein}</h4>
+          <h4>Added Sugar: {added_sugar}</h4>
+        </container>
 
-        <div className="d-flex show-buttons">
+        <div className="d-flex-show-buttons">
           <div>
             <button className="btn btn-dark" onClick={goBack}>
               Back

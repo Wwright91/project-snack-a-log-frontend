@@ -22,22 +22,11 @@ const Snacks = () => {
 
   return (
     <div className="Snacks">
-      <section>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Take me there</th>
-              <th>See this snack</th>
-            </tr>
-          </thead>
-          <tbody>
-            {snacks.map((snack) => {
-              return <Snack key={snack.id} snack={snack} />;
-            })}
-          </tbody>
-        </table>
-      </section>
+      <div className="info">
+        {snacks.map((snack) => {
+          return <Snack key={snack.id} snack={snack} />;
+        })}
+      </div>
     </div>
   );
 };
