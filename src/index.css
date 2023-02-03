@@ -26,6 +26,14 @@ a {
   column-gap: 20px;
 }
 
+.error{
+    background-color:rgba(115, 115, 96, 0.883);
+}
+
+.return-home {
+ color: rgba(237, 240, 15, 0.883)
+}
+
 .index {
   text-align: center;
   background-color: dimgray;

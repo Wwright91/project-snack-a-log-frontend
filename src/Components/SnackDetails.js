@@ -25,8 +25,11 @@ const SnackDetails = () => {
         console.log(res.data);
         setSnack(res.data);
       })
-      .catch((c) => console.error("catch", c));
-  }, [id]);
+      .catch((c) => {
+        navigate("/404")
+        console.error("catch", c)
+      });
+  }, [id, navigate]);
 
   const goBack = (e) => {
     e.preventDefault();
