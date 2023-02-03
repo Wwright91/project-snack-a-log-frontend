@@ -1,23 +1,23 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #navbar {
-    margin: 40px;
+  margin: 40px;
 }
 
 .header {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    font-size: large;
+  text-decoration: none;
+  color: black;
+  font-size: large;
 }
 
 .new-button {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .show-buttons {
@@ -26,34 +26,61 @@ a {
   column-gap: 20px;
 }
 
-.index{
-    text-align: center;
-    background-color: dimgray;
+.index {
+  text-align: center;
+  background-color: dimgray;
 }
 
-.Snacks{
-    grid-area: 1 / 3 / 5 / 6;
-    height: calc(100vh - 161px);
-    overflow-y: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+.Snacks {
+  grid-area: 1 / 3 / 5 / 6;
+  height: calc(100vh - 161px);
+  overflow-y: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
-.info{
-    grid-template-rows: 1fr 1fr;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    justify-items: center;
+.info {
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
 }
 
-.snack-card{
-border-style: solid;
-border-color: black;
-border: solid;
+.snack-card {
+  border-style: solid;
+  border-color: black;
+  border: solid;
 }
 
+#footer {
+  background-color: rgba(237, 240, 15, 0.883);
+  margin-top: 200px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
+main {
+  padding-bottom: 140px;
+}
 
+#footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 0px 5px;
+  list-style-type: none;
+  color: rgba(115, 115, 96, 0.883);
+}
+
+#footer ul a {
+  font-size: medium;
+}
+
+#footer ul a:hover {
+  color: rgba(115, 115, 96, 0.883);
+}
