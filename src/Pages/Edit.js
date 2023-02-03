@@ -3,8 +3,8 @@ import SnackEditForm from '../Components/SnackEditForm'
 
 const Edit = () => {
   return (
-    <div>
-      <h1>Edit Snack</h1>
+    <div className='edit-page'>
+      <h1 className='edit-h1'>Edit Snack</h1>
       <SnackEditForm/>
     </div>
   )

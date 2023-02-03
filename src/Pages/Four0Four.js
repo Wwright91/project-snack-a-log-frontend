@@ -2,7 +2,7 @@ import React from 'react'
 
 const Four0Four = () => {
   return (
-    <div>
+    <div className='FourFour'>
       <h1>Sorry, no page found</h1>
     </div>
   )
