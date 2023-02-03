@@ -20,24 +20,31 @@ const Snacks = () => {
       });
   }, []);
 
+  function sortByNameDesc() {
+    const sortedNames = [...snacks].sort((a, b) => {
+      return a.name > b.name ? 1 : -1;
+    });
+    setSnacks(sortedNames);
+  }
+
+  function sortByNameAsc() {
+    const sortedNames = [...snacks].sort((a, b) => {
+      return b.name > a.name ? 1 : -1;
+    });
+    setSnacks(sortedNames);
+  }
+
   return (
     <div className="Snacks">
-      <section>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Take me there</th>
-              <th>See this snack</th>
-            </tr>
-          </thead>
-          <tbody>
-            {snacks.map((snack) => {
-              return <Snack key={snack.id} snack={snack} />;
-            })}
-          </tbody>
-        </table>
-      </section>
+      <div className="name">
+        <button onClick={sortByNameDesc}>Sort by Name ⬇️</button>
+        <button onClick={sortByNameAsc}>Sort by Name ⬆️</button>
+      </div>
+      <div className="info">
+        {snacks.map((snack) => {
+          return <Snack key={snack.id} snack={snack} />;
+        })}
+      </div>
     </div>
   );
 };
