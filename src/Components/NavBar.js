@@ -5,10 +5,14 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div id="navbar">
-      <h1 className="text-center header">Snacks App</h1>
+      <h1 className="text-center header">
+        {" "}
+        <img src="https://img.icons8.com/stickers/100/null/kawaii-pizza.png"></img>{" "}
+        Snacks App
+      </h1>
       <Nav fill>
         <Nav.Item>
-            <Link to={`/snacks`}>All Snacks</Link>
+          <Link to={`/snacks`}>All Snacks</Link>
         </Nav.Item>
         <Nav.Item>
           <Button variant="outline-info" className="new-button">
