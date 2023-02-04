@@ -13,12 +13,12 @@ const NavBar = () => {
       </h1>
       <Nav fill>
         <Nav.Item>
-          <Button variant="warning" className="new-button">
+          <Button variant="warning" className="new-btn">
             <Link to={`/snacks`}>All Snacks</Link>
           </Button>
         </Nav.Item>
         <Nav.Item>
-          <Button variant="warning" className="new-button">
+          <Button variant="warning" className="new-btn">
             <Link to={`/snacks/new`}>Add A New Snack</Link>
           </Button>
         </Nav.Item>

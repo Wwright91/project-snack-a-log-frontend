@@ -14,21 +14,21 @@
 
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
     font-size: large;
 }
 
-.new-button {
+.new-btn {
   border-radius: 30px;
   margin-bottom: 15px;
 }
 
-.new-button a {
+.new-btn a {
 
   color: rgba(115, 115, 96, 0.883);
 }
 
-.new-button :hover {
+.new-btn :hover {
    color: white;
   }
 
