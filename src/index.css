@@ -12,7 +12,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: large;
 }
 
@@ -36,12 +36,12 @@ textarea {
   box-shadow: rgba(237, 240, 15, 0.883) 0px 50px 100px -20px, rgba(237, 240, 15, 0.883) 0px 30px 60px -30px, rgba(237, 240, 15, 0.883) 0px -2px 6px 0px inset;
 }
 
-.edit-h1{
+.edit-h1, .new-h1{
     text-align: center;
     font-size: xx-large;
 }
 
-.edit_labels{
+.edit_labels, .new_labels{
     text-decoration-style: wavy;
     font-size: medium;
     text-decoration-color: rgba(237, 240, 15, 0.883);
@@ -49,14 +49,14 @@ textarea {
    
 }
 
-.edit-page{
+.edit-page, .new-page{
     background-color: rgba(115, 115, 96, 0.883);
     padding: 20px 10px 200px 10px;
     /* text-align: center; */
     
 }
 
-.edit-button{
+.edit-button, .new-button{
     background-color: black;
     color: rgba(237, 240, 15, 0.883);
 }
