@@ -3,11 +3,13 @@
 }
 
 #navbar {
-  margin: 40px;
+    background-color: rgba(237, 240, 15, 0.883);
+    width: 100%;
 }
 
 .header {
   font-size: xx-large;
+  color: rgba(115, 115, 96, 0.883);
 }
 
 a {
@@ -18,7 +20,17 @@ a {
 
 .new-button {
   border-radius: 30px;
+  margin-bottom: 15px;
 }
+
+.new-button a {
+
+  color: rgba(115, 115, 96, 0.883);
+}
+
+.new-button :hover {
+   color: white;
+  }
 
 .show-buttons {
   flex-direction: row-reverse;
@@ -114,7 +126,7 @@ form{
 }
 
 main {
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
 #footer ul {
