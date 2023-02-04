@@ -7,15 +7,18 @@ const NavBar = () => {
     <div id="navbar">
       <h1 className="text-center header">
         {" "}
-        <img src="https://img.icons8.com/stickers/100/null/kawaii-pizza.png"></img>{" "}
+        <Link to="/"> <img src="https://img.icons8.com/stickers/100/null/kawaii-pizza.png" alt="pizza"></img></Link>
+       {" "}
         Snacks App
       </h1>
       <Nav fill>
         <Nav.Item>
-          <Link to={`/snacks`}>All Snacks</Link>
+          <Button variant="warning" className="new-button">
+            <Link to={`/snacks`}>All Snacks</Link>
+          </Button>
         </Nav.Item>
         <Nav.Item>
-          <Button variant="outline-info" className="new-button">
+          <Button variant="warning" className="new-button">
             <Link to={`/snacks/new`}>Add A New Snack</Link>
           </Button>
         </Nav.Item>

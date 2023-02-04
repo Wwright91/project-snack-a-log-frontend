@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer id="footer">
+      <footer id="footer">
       <ul>
-        <h2>Meet The Devs</h2>
+        <h2><img src="https://img.icons8.com/stickers/100/null/kawaii-pizza.png" alt="pizza" height="40px" width="40px"></img>Meet The Devs</h2>
         <li>
           <a href="https://github.com/branben" target="_blank" rel="noreferrer">
             Brandon Bennett

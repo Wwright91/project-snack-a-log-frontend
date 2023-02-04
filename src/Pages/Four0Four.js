@@ -8,7 +8,7 @@ const Four0Four = () => {
     <div className='text-center error'>
       <h1>Oh No, This Isn't Where We Keep The Marshmellows!</h1>
       <h3>Return <Link className='return-home' to="/">Home</Link></h3>
-      <img src={spaceman} width='800px' height='600px'/>
+      <img src={spaceman} alt="spaceman" width='800px' height='600px'/>
     </div>
   )
 }
