@@ -37,10 +37,10 @@ const SnackNewForm = () => {
 
   return (
     <div>
-      <h3>Add a New Snack</h3>
+      
 
       <form onSubmit={handleSubmit}>
-        <label for="name">Name</label>
+        <label htmlFor="name" className="new_labels">Name</label>
         <input
           onChange={(e) => setName(e.target.value)}
           id="name"
@@ -49,7 +49,7 @@ const SnackNewForm = () => {
           value={name}
         />
 
-        <label for="protein">Protein</label>
+        <label htmlFor="protein" className="new_labels">Protein</label>
         <input
           onChange={(e) => setProtein(e.target.value)}
           id="protein"
@@ -58,7 +58,7 @@ const SnackNewForm = () => {
           value={protein}
         />
 
-        <label for="Fiber">Fiber</label>
+        <label htmlFor="Fiber" className="new_labels">Fiber</label>
         <input
           onChange={(e) => setFiber(e.target.value)}
           id="fiber"
@@ -67,7 +67,7 @@ const SnackNewForm = () => {
           value={fiber}
         />
 
-        <label for="image">Image</label>
+        <label htmlFor="image" className="new_labels">Image</label>
         <input
           onChange={(e) => setImage(e.target.value)}
           id="image"
@@ -76,7 +76,7 @@ const SnackNewForm = () => {
           value={image}
         />
 
-        <label for="sugar">Sugar</label>
+        <label htmlFor="sugar" className="new_labels">Sugar</label>
         <input
           onChange={(e) => setSugar(e.target.value)}
           id="added_sugar"
@@ -85,7 +85,9 @@ const SnackNewForm = () => {
           value={added_sugar}
         />
 
-        <input type="submit" value="submit" />
+        <br />   
+
+        <input classname="new-submit" type="submit" value="submit" style={{color:" rgba(237, 240, 15, 0.883)"}}/>
       </form>
     </div>
   );
