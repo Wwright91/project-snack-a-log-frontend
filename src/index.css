@@ -40,7 +40,7 @@ a {
 
 
 
-input[type],
+input[type], .name button
 textarea {
   display: block;
   width: 90%;
@@ -68,7 +68,7 @@ textarea {
     
 }
 
-.edit-button, .new-button{
+.edit-button, .new-button {
     background-color: black;
     color: rgba(237, 240, 15, 0.883);
 }
@@ -79,8 +79,10 @@ form{
     margin: 10;
 }
 
-.error{
+.error, .index{
     background-color:rgba(115, 115, 96, 0.883);
+    /* paddi */
+    padding: 20px 10px 200px 10px;
 }
 
 .return-home {
@@ -126,7 +128,8 @@ form{
 }
 
 main {
-  padding-bottom: 100px;
+  /* padding-bottom: 1px; */
+  margin: 0;
 }
 
 #footer ul {
@@ -144,5 +147,12 @@ main {
 
 #footer ul a:hover {
   color: rgba(115, 115, 96, 0.883);
+}
+
+.name  button {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    box-shadow: rgba(237, 240, 15, 0.883) 0px 50px 100px -20px, rgba(237, 240, 15, 0.883) 0px 30px 60px -30px, rgba(237, 240, 15, 0.883) 0px -2px 6px 0px inset;
 }
 

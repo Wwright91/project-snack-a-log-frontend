@@ -3,8 +3,8 @@ import Snacks from "../Components/Snacks";
 
 const Index = () => {
   return (
-    <div>
-      <h2 className="index"> Index </h2>
+    <div className="index">
+      <h2> Index </h2>
       <Snacks />
     </div>
   );
