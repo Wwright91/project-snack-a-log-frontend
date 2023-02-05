@@ -29,7 +29,7 @@ const Snacks = () => {
 
   function sortByNameAsc() {
     const sortedNames = [...snacks].sort((a, b) => {
-      return b.name > a.name ? 1 : -1;
+      return a.name > b.name ? 1 : -1;
     });
     setSnacks(sortedNames);
   }
