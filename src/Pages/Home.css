@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 145px;
+}
+
+.Home img {
+    box-shadow: rgba(237, 240, 15, 0.883) 0px 15px 25px, rgba(115, 115, 96, 0.883) 0px 5px 10px;
 }
 
 a {
