@@ -20,12 +20,12 @@ const Snacks = () => {
       });
   }, []);
 
-  function sortByNameDesc() {
-    const sortedNames = [...snacks].sort((a, b) => {
-      return a.name > b.name ? 1 : -1;
-    });
-    setSnacks(sortedNames);
-  }
+  // function sortByNameDesc() {
+  //   const sortedNames = [...snacks].sort((a, b) => {
+  //     return a.name > b.name ? 1 : -1;
+  //   });
+  //   setSnacks(sortedNames);
+  // }
 
   function sortByNameAsc() {
     const sortedNames = [...snacks].sort((a, b) => {
