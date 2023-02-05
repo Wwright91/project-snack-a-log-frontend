@@ -51,7 +51,13 @@ const SnackDetails = () => {
           />
         </h3>
         <br />
-        <img src={image} alt={name} height="200px" width="200px" />
+        <img
+          className="snack-picture"
+          src={image}
+          alt={name}
+          height="200px"
+          width="200px"
+        />
         <br />
         <br />
         <container className="container">

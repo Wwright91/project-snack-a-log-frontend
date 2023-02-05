@@ -239,3 +239,9 @@ main {
   --bs-btn-disabled-bg: #212529;
   --bs-btn-disabled-border-color: #212529;
 }
+
+.snack-picture{
+  border: black;
+  border-width: 2px;
+  border-style: solid;  
+}
