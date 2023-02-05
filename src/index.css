@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: gray;
+}
+
 #navbar {
     background-color: rgba(237, 240, 15, 0.883);
     width: 100%;
