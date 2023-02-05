@@ -61,17 +61,17 @@ const SnackDetails = () => {
         </container>
 
         <div className="d-flex-show-buttons">
-          <div>
+          <div className="back-btn">
             <button className="btn btn-dark" onClick={goBack}>
               Back
             </button>
           </div>
-          <div>
+          <div className="edit-btn">
             <Link to={`/snacks/${id}/edit`}>
               <button className="btn btn-warning">Edit</button>
             </Link>
           </div>
-          <div>
+          <div className="delete-btn">
             <ConfirmDelete
               id={id}
               navigate={navigate}
