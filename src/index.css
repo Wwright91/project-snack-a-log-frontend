@@ -90,9 +90,17 @@ form{
  color: rgba(237, 240, 15, 0.883)
 }
 
+.return-home:hover{
+  color: white;
+ }
+
 .index {
   text-align: center;
   background-color: dimgray;
+}
+
+.index h2 {
+  color: whitesmoke;
 }
 
 .Snacks {
@@ -114,6 +122,7 @@ form{
   border-style: solid;
   border-color: black;
   border: solid;
+  box-shadow: rgba(237, 240, 15, 0.883) 0px 15px 25px, rgba(115, 115, 96, 0.883) 0px 5px 10px;
 }
 
 #footer {
@@ -246,7 +255,8 @@ main {
 .snack-picture{
   border: black;
   border-width: 2px;
-  border-style: solid;  
+  border-style: solid;
+  box-shadow: rgba(237, 240, 15, 0.883) 0px 15px 25px, rgba(115, 115, 96, 0.883) 0px 5px 10px;  
 }
 
 @media (max-width: 425px){
