@@ -41,8 +41,6 @@ a {
   column-gap: 20px;
 }
 
-
-
 input[type], .name button
 textarea {
   display: block;
@@ -147,6 +145,7 @@ main {
   padding: 5px 0px 5px;
   list-style-type: none;
   color: rgba(115, 115, 96, 0.883);
+  align-items: center;
 }
 
 #footer ul a {
@@ -244,4 +243,47 @@ main {
   border: black;
   border-width: 2px;
   border-style: solid;  
+}
+
+@media (max-width: 425px){
+  main {
+    display: flex;
+    flex-direction: column;
+
+  }
+/* Index */
+  .Snacks {
+    display: inline;
+  }
+
+  .name {
+    padding-top: 7px;
+    padding-bottom: 14px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7px;
+    grid-template-rows: none;
+    justify-content: center;
+  }
+
+/* Home */
+  .Home img {
+    width: 300px;
+  }
+
+  #footer {
+    margin-top: 0;
+    position: inherit;
+  }
+
+  #footer ul {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+  }
+
 }
