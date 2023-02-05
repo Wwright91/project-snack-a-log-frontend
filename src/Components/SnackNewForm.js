@@ -37,10 +37,10 @@ const SnackNewForm = () => {
 
   return (
     <div>
-      
-
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name" className="new_labels">Name</label>
+        <label htmlFor="name" className="new_labels">
+          Name
+        </label>
         <input
           onChange={(e) => setName(e.target.value)}
           id="name"
@@ -49,7 +49,9 @@ const SnackNewForm = () => {
           value={name}
         />
 
-        <label htmlFor="protein" className="new_labels">Protein</label>
+        <label htmlFor="protein" className="new_labels">
+          Protein
+        </label>
         <input
           onChange={(e) => setProtein(e.target.value)}
           id="protein"
@@ -58,7 +60,9 @@ const SnackNewForm = () => {
           value={protein}
         />
 
-        <label htmlFor="Fiber" className="new_labels">Fiber</label>
+        <label htmlFor="Fiber" className="new_labels">
+          Fiber
+        </label>
         <input
           onChange={(e) => setFiber(e.target.value)}
           id="fiber"
@@ -67,7 +71,9 @@ const SnackNewForm = () => {
           value={fiber}
         />
 
-        <label htmlFor="image" className="new_labels">Image</label>
+        <label htmlFor="image" className="new_labels">
+          Image
+        </label>
         <input
           onChange={(e) => setImage(e.target.value)}
           id="image"
@@ -76,7 +82,9 @@ const SnackNewForm = () => {
           value={image}
         />
 
-        <label htmlFor="sugar" className="new_labels">Sugar</label>
+        <label htmlFor="sugar" className="new_labels">
+          Sugar
+        </label>
         <input
           onChange={(e) => setSugar(e.target.value)}
           id="added_sugar"
@@ -85,9 +93,14 @@ const SnackNewForm = () => {
           value={added_sugar}
         />
 
-        <br />   
+        <br />
 
-        <input classname="new-submit" type="submit" value="submit" style={{color:" rgba(237, 240, 15, 0.883)"}}/>
+        <input
+          classname="new-submit"
+          type="submit"
+          value="submit"
+          style={{ color: " rgba(237, 240, 15, 0.883)" }}
+        />
       </form>
     </div>
   );

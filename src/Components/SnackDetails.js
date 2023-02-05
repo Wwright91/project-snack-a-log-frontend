@@ -26,8 +26,8 @@ const SnackDetails = () => {
         setSnack(res.data);
       })
       .catch((c) => {
-        navigate("/404")
-        console.error("catch", c)
+        navigate("/404");
+        console.error("catch", c);
       });
   }, [id, navigate]);
 
@@ -39,9 +39,11 @@ const SnackDetails = () => {
   return (
     <div className="card-body text-center">
       <article>
+        <br />
         <h3>
           {name}{" "}
           <img
+            className="card-image-details"
             src={is_healthy ? heart_solid : heart_outline}
             height="20px"
             width="20px"

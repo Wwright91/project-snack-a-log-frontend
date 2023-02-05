@@ -37,8 +37,7 @@ const Snacks = () => {
   return (
     <div className="Snacks">
       <div className="name">
-        <button onClick={sortByNameDesc}>Sort by Name ⬇️</button>
-        <button onClick={sortByNameAsc}>Sort by Name ⬆️</button>
+        <button onClick={sortByNameAsc}>Sort by Name ⬇️</button>
       </div>
       <div className="info">
         {snacks.map((snack) => {
