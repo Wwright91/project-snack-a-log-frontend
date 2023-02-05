@@ -26,8 +26,8 @@ const SnackDetails = () => {
         setSnack(res.data);
       })
       .catch((c) => {
-        navigate("/404")
-        console.error("catch", c)
+        navigate("/404");
+        console.error("catch", c);
       });
   }, [id, navigate]);
 
@@ -39,9 +39,11 @@ const SnackDetails = () => {
   return (
     <div className="card-body text-center">
       <article>
+        <br />
         <h3>
           {name}{" "}
           <img
+            className="card-image-details"
             src={is_healthy ? heart_solid : heart_outline}
             height="20px"
             width="20px"
@@ -49,7 +51,13 @@ const SnackDetails = () => {
           />
         </h3>
         <br />
-        <img src={image} alt={name} height="200px" width="200px" />
+        <img
+          className="snack-picture"
+          src={image}
+          alt={name}
+          height="200px"
+          width="200px"
+        />
         <br />
         <br />
         <container className="container">
@@ -59,17 +67,17 @@ const SnackDetails = () => {
         </container>
 
         <div className="d-flex-show-buttons">
-          <div>
+          <div className="back-btn">
             <button className="btn btn-dark" onClick={goBack}>
               Back
             </button>
           </div>
-          <div>
+          <div className="edit-btn">
             <Link to={`/snacks/${id}/edit`}>
               <button className="btn btn-warning">Edit</button>
             </Link>
           </div>
-          <div>
+          <div className="delete-btn">
             <ConfirmDelete
               id={id}
               navigate={navigate}

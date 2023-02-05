@@ -45,7 +45,9 @@ const SnackEditForm = () => {
   return (
     <div className="Edit">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name" className="edit_labels">Name:</label>
+        <label htmlFor="name" className="edit_labels">
+          Name:
+        </label>
         <input
           id="name"
           value={edit.name}
@@ -54,14 +56,18 @@ const SnackEditForm = () => {
           placeholder="Name of Snack"
           required
         />
-        <label htmlFor="fiber" className="edit_labels">Fiber:</label>
+        <label htmlFor="fiber" className="edit_labels">
+          Fiber:
+        </label>
         <input
           id="fiber"
           type="text"
           value={edit.fiber}
           onChange={handleText}
         />
-        <label htmlFor="protein" className="edit_labels">Protein:</label>
+        <label htmlFor="protein" className="edit_labels">
+          Protein:
+        </label>
         <input
           id="protein"
           type="text"
@@ -69,7 +75,9 @@ const SnackEditForm = () => {
           value={edit.protein}
           onChange={handleText}
         />
-        <label htmlFor="added_sugar" className="edit_labels">Added Sugar:</label>
+        <label htmlFor="added_sugar" className="edit_labels">
+          Added Sugar:
+        </label>
         <input
           id="added_sugar"
           type="text"
@@ -77,7 +85,9 @@ const SnackEditForm = () => {
           onChange={handleText}
           value={edit.added_sugar}
         />
-        <label htmlFor="image" className="edit_labels">Photo:</label>
+        <label htmlFor="image" className="edit_labels">
+          Photo:
+        </label>
         <input
           id="image"
           type="text"
@@ -89,7 +99,11 @@ const SnackEditForm = () => {
 
         <br />
 
-        <input classname="edit-submit" type="submit" style={{color:" rgba(237, 240, 15, 0.883)"}} />
+        <input
+          classname="edit-submit"
+          type="submit"
+          style={{ color: " rgba(237, 240, 15, 0.883)" }}
+        />
       </form>
       <Link to={`/snacks/${id}`}>
         <button className="edit-button">Nevermind!</button>
